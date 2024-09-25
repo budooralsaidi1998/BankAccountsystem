@@ -1,6 +1,8 @@
 ﻿
 
 using System.ComponentModel.Design;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Banksystem
 {
@@ -12,13 +14,16 @@ namespace Banksystem
         public decimal Balance { get; private set; }
         public static decimal balanceamount = 0;
 
+      
 
         public  BankAccountClass(string accountNumber ,string accountholdername )
         {
             AccountNumber=accountNumber;
             AccountHolderName=accountholdername;
+            this.AccountNumber = ;
+              
         }
-
+     
         public BankAccountClass(decimal initialdeposit, string accountNumber, string accountholdername)
         {
             Balance = initialdeposit;
