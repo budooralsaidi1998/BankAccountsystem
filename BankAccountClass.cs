@@ -9,10 +9,10 @@ namespace Banksystem
     public class BankAccountClass
     {
 
-        private string AccountNumber;
-        private string AccountHolderName;
+        public string AccountNumber { get; private set; };
+        public string AccountHolderName { get; private set; };
         public decimal Balance { get; private set; }
-        public static decimal balanceamount = 0;
+       
 
       
 
@@ -38,8 +38,8 @@ namespace Banksystem
         public void deposit()
         {
            
-            
-                balanceamount = +Balance;
+            Console.WriteLine("enter the moun")
+              = +Balance;
                 Console.WriteLine($"the balance after deposir : {balanceamount}");
             
 
